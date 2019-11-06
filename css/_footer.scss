@@ -1,0 +1,63 @@
+footer{
+    width: 100%;
+    height: 40vh;
+    background-color: black;
+    padding: 8% 12%; 
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    font-family: $fontTitle;
+
+
+    #leftFooter{
+        width:33%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 2.6rem;
+
+        p{
+            text-align: left;
+            font-size: 1.3rem;
+        }
+
+        .ville{
+            text-transform: uppercase;
+        }
+    }
+
+    nav{
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.3rem;
+        line-height: 2.6rem;
+        a{
+            text-transform: uppercase;
+            color: white; 
+            text-decoration: none;
+        }
+    }
+
+    #rightFooter{
+        width: 33%;
+        font-size: 1.3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+
+        p{
+            text-align: right;
+        }
+
+        .lorem{
+            width: 80%;
+            margin-bottom: 30px;
+        }
+    }
+}

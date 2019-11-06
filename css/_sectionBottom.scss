@@ -1,0 +1,89 @@
+#bottom{
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    background-image: url('../images/desk-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7%;
+
+
+    #left{
+        flex: 0 0 35%;
+        height: 100%;
+        color:white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-right: 30px;
+
+        h2{
+            width: 100%;
+            text-align: left;
+            text-transform: uppercase;
+            font-size: 2rem;
+            font-family: $fontTitle;
+            font-weight: bold;
+            letter-spacing: 0.4rem;
+            margin-bottom:10px;
+        }
+
+        p{
+            font-family: $fontText;
+            font-size: 1.2rem;
+            letter-spacing: 0.2rem;
+        }
+    }
+
+    #right{
+        flex: 0 0 65%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: space-between;
+        div{
+            flex: 0 0 31%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: space-between;
+            margin-right: 2%;
+            margin-bottom: 2%;
+            color: white;
+            background-color: rgba(255, 255, 255, .1);
+            padding: 10px;
+            transition: all 0.2s ease;
+
+            i{
+                color: $colorMain;
+                font-size: 3rem;
+                margin-bottom: 20px;
+            }
+            h3{
+                text-transform: uppercase;
+                font-size: 1.2rem;
+                font-family: $fontTitle;
+                letter-spacing: 0.2rem;
+                margin-bottom: 20px;
+            }
+
+            p{
+                font-family: $fontTitle;
+                font-weight: bold;
+                letter-spacing: 0.2rem;
+                font-size: 1.1rem;
+                margin-bottom: 20px;
+            }
+        }
+        div:hover{
+            transform:rotate(5deg) scale(1.1);
+        }
+    }
+}

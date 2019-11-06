@@ -1,0 +1,55 @@
+#top{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image : url("../images/main-background.png");
+    background-size: cover;
+    position: relative;
+    #title{
+        width: 100%;
+        height: 50%;
+        background-image: url("../images/main-logo.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: $fontTitle;
+        position: relative;
+        z-index: 1001;
+
+        h1{
+            text-transform: uppercase;
+            font-size: 3.5rem;
+        }
+
+        p{
+            font-size: 1.5rem;
+            font-family : $fontText;
+            span{
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+        }
+
+
+    }
+    #overlay{
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+            63deg, 
+            rgba(2,0,36,0) 53%, 
+            rgba(31,137,130,0.6671043417366946) 53%, 
+            rgba(0,212,255,0) 74%
+        );
+            position: absolute;
+            z-index: 1000;
+        }
+}
