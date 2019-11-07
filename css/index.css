@@ -64,7 +64,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 999;
+  z-index: 1001;
 }
 
 header #logo {
@@ -84,6 +84,7 @@ header #logo img {
 
 header nav {
   color: white;
+  position: relative;
 }
 
 header nav ul {

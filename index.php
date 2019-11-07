@@ -31,7 +31,7 @@
     <section id="top">
         <div id="title">
             <p>Lorem <span>IPSUM</span> dolor sit amet, <span>CONSECTETUR</span></p>
-            <h1>Maquette Web Design</br> Développeur Web</h1>
+            <h1>Maquette Web Design<br/> Développeur Web</h1>
         </div>
         <div id="overlay"></div>
     </section>
