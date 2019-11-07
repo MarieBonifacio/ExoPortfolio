@@ -456,9 +456,42 @@ header nav ul a:hover::after {
   -webkit-box-align: space-between;
       -ms-flex-align: space-between;
           align-items: space-between;
+  position: relative;
 }
 
-#bottom #right div {
+#bottom #right #click {
+  width: 0%;
+  height: 0%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+#bottom #right #click .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+  font-size: 1.2rem;
+  padding: 5px;
+  z-index: 101;
+  cursor: pointer;
+}
+
+#bottom #right #click.active {
+  width: 100%;
+  height: 100%;
+}
+
+#bottom #right #click.active i {
+  display: inline;
+}
+
+#bottom #right .mini, #bottom #right #click .content {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 31%;
           flex: 0 0 31%;
@@ -475,22 +508,26 @@ header nav ul a:hover::after {
   -webkit-box-align: space-between;
       -ms-flex-align: space-between;
           align-items: space-between;
+  position: relative;
+  z-index: 99;
   margin-right: 2%;
   margin-bottom: 2%;
   color: white;
   background-color: rgba(255, 255, 255, 0.1);
   padding: 10px;
+  opacity: 1;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  cursor: pointer;
 }
 
-#bottom #right div i {
+#bottom #right .mini i, #bottom #right #click .content i {
   color: #00FAC8;
   font-size: 3rem;
   margin-bottom: 20px;
 }
 
-#bottom #right div h3 {
+#bottom #right .mini h3, #bottom #right #click .content h3 {
   text-transform: uppercase;
   font-size: 1.2rem;
   font-family: "Muli", serif;
@@ -498,7 +535,7 @@ header nav ul a:hover::after {
   margin-bottom: 20px;
 }
 
-#bottom #right div p {
+#bottom #right .mini p, #bottom #right #click .content p {
   font-family: "Muli", serif;
   font-weight: bold;
   letter-spacing: 0.2rem;
@@ -506,9 +543,21 @@ header nav ul a:hover::after {
   margin-bottom: 20px;
 }
 
-#bottom #right div:hover {
+#bottom #right .mini:hover {
   -webkit-transform: rotate(5deg) scale(1.1);
           transform: rotate(5deg) scale(1.1);
+}
+
+#bottom #right .mini.hide {
+  opacity: 0;
+}
+
+#bottom #right #click .content {
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  cursor: default;
+  padding: 20px;
 }
 
 footer {

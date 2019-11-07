@@ -76,32 +76,36 @@
             <p>Duis aute irure dolor in reprehenderit in volupte velit esse cillum.
         </div>
         <div id="right">
-            <div data-aos="fade-down-right">
+            <div id="click">
+                <i class="far fa-times-circle close"></i>
+                <div class="content"></div>
+            </div>
+            <div data-aos="fade-down-right" class="mini">
                 <i class="fas fa-layer-group"></i>
                 <h3>Interface design</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
-            <div data-aos="fade-down">
+            <div data-aos="fade-down" class="mini">
                 <i class="fas fa-pencil-ruler"></i>
                 <h3>Theming</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
-            <div data-aos="fade-down-left">
+            <div data-aos="fade-down-left" class="mini">
                 <i class="fas fa-search"></i>
                 <h3>Referencement</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
-            <div data-aos="fade-up-right">
+            <div data-aos="fade-up-right" class="mini">
                 <i class="fas fa-mobile-alt"></i>
                 <h3>Mobile app</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
-            <div data-aos="fade-up">
+            <div data-aos="fade-up" class="mini">
                 <i class="far fa-object-ungroup"></i>
                 <h3>Responsive design</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
-            <div data-aos="fade-up-left">
+            <div data-aos="fade-up-left" class="mini">
                 <i class="fas fa-user-edit"></i>
                 <h3>Free updates</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
